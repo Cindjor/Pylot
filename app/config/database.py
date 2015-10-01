@@ -4,7 +4,7 @@
 """ Put Generic Database Configurations here """
 class DBConfig(object):
     """ DB_ON must be True to use the DB! """
-    DB_ON = False
+    DB_ON = True
     DB_DRIVER = 'mysql'
     DB_ORM = False
 
