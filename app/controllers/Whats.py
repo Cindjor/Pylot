@@ -10,6 +10,11 @@ class Whats(Controller):
 		print categories
 		return self.load_view('index.html',categories=categories)
 
+	def index1(self):  
+		categories=self.getValueCategory()
+		print categories
+		return self.load_view('deepa.html',categories=categories)
+
 	def getValueCategory(self):
 		category=[]
 		url = "http://api.eventful.com/json/categories/list?app_key=jk5zHMNmqkqjb6jS"
@@ -20,7 +25,12 @@ class Whats(Controller):
 		
 		return category
 	def getallgeocode(self):
-		url="http://api.eventful.com/json/events/search?app_key=jk5zHMNmqkqjb6jS&location=san%20jose,%20CA"
+		url="http://api.eventful.com/json/events/search?app_key=jk5zHMNmqkqjb6jS&location=san%20jose,%20CA&page_size=100"
 		res = requests.get(url).content
 		return res
 
+	def home(self):
+		return self.load_view('home.html')
+
+	def event(self):
+		return self.load_view('events.html')
