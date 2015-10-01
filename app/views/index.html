@@ -14,8 +14,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   <script src="https://maps.googleapis.com/maps/api/js"></script>
-
-  <script>
+	<script src="/static/js/whatgood.js"></script>
+   <script>
     function initialize() {
       var mapCanvas = document.getElementById('googlemap');
       var mapOptions = {
@@ -26,8 +26,9 @@
       var googlemap = new google.maps.Map(mapCanvas, mapOptions)
       
     }
-    google.maps.event.addDomListener(window, 'load', initialize);
-  </script>
+     google.maps.event.addDomListener(window, 'load', initialize);
+   </script>
+   
 
 
 
