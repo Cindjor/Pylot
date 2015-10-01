@@ -1,7 +1,22 @@
-* {
-  font-family: monaco;
+
+
+#container {
+    width: 1000px;
+    margin: auto 0;
+    padding-left: 25px;
+  }
+  #googlemap {
+      width: 700px;
+      height: 500px;
+    }  
+  #head {
+    height: 175px;
+    padding-left: 300px;
+  }
+#body {
+  background-color: lightgrey;
+
 }
-#googmap{
-	width:300px;
-	height:300px;
+#body h1 {
+  padding-left: 20px;
 }
